@@ -1,0 +1,29 @@
+.link {
+  text-decoration: none;
+  color: var(--color-action);
+  font-size: 16px;
+  position: relative;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+.link:hover {
+  color: var(--color-action-hover);
+}
+.link:active {
+  color: var(--color-action-active);
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  background-color: currentColor;
+  height: 1px;
+  width: 100%;
+  transition: opacity 0.2s;
+}
+.link:hover::after,
+.link:active::after {
+  opacity: 0;
+}

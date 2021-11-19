@@ -1,0 +1,39 @@
+.form {
+}
+
+.form__option {
+}
+.form__option:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.form__options,
+.form__contacts {
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-top: 32px;
+}
+
+.form__options-title,
+.form__contacts-title {
+  padding-inline: unset;
+  font: var(--text-h3);
+  margin-bottom: 16px;
+}
+
+.form__contacts {
+}
+
+.form__contacts-title {
+}
+
+.form__submit {
+  margin: 60px auto 0;
+}
+
+@media (max-width: 375px) {
+  .form__submit {
+    width: 100%;
+  }
+}

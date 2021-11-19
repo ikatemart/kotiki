@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Котопочта</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Sans+Narrow&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/link.css" />
+    <link rel="stylesheet" href="styles/button.css" />
+    <link rel="stylesheet" href="styles/checkbox.css" />
+    <link rel="stylesheet" href="styles/message.css" />
+    <link rel="stylesheet" href="styles/text-card.css" />
+    <link rel="stylesheet" href="styles/input-group.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/page.css" />
+  </head>
+  <body>
+    <div class="page">
+      <!-- header -->
+      <div class="page__header">
+        <header class="header">
+          <div class="header__logo">
+            <a class="header__link" href="#"></a>
+            <svg
+              width="48"
+              height="43"
+              viewBox="0 0 48 43"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24 19C16.5591 19 6.0844 30.5031 6.0844 37.7688 6.0019 41.0406 8.5088 43 12.7313 43c4.575 0 7.6031-2.3531 11.2687-2.3531 3.7031 0 6.7407 2.3531 11.2688 2.3531 4.1344 0 6.7256-1.9575 6.7256-5.2265C41.9156 30.5125 31.4438 19 24 19Zm-13.8-1.1812c-.9722-3.2456-3.9843-5.355-6.7143-4.6988-2.73.6563-4.1517 3.8175-3.1791 7.0613.9722 3.2531 3.9844 5.3625 6.7144 4.7062 2.73-.6562 4.1446-3.825 3.179-7.0687Zm7.9406-1.95c2.8941-.7617 4.3472-4.6031 3.2344-8.7535-1.1128-4.1503-4.3594-6.6656-7.2647-5.9878-2.894.7618-4.3472 4.6032-3.2343 8.7535 1.1146 4.0659 4.3584 6.7565 7.2646 5.9878Zm26.3813-2.7469c-2.73-.5719-5.7422 1.4531-6.7144 4.6988-.9722 3.2465.4453 6.4096 3.1753 7.0659 2.73.5719 5.73-1.4531 6.7144-4.6988.9684-3.2503-.5316-6.4096-3.1753-7.0659Zm-14.6625 2.7469c2.8219.7617 6.1519-1.9219 7.2647-5.9878 1.1128-4.066-.3399-7.9922-3.2344-8.7535-2.8219-.7617-6.1519 1.922-7.2647 5.9878-1.1156 4.066.3375 7.9941 3.2344 8.7535Z"
+                fill="currentColor"
+              />
+            </svg>
+            <h1 class="header__title">Котопочта</h1>
+          </div>
+          <nav class="header__nav">
+            <a class="header__nav-item link" href="#">Забрать кота себе</a>
+            <a class="header__nav-item link" href="#">Задонатить на корм</a>
+          </nav>
+          <button class="header__button button">Войти</button>
+        </header>
+      </div>
+
+      <!-- main part -->
+      <div class="page__body">
+        <main class="page__main">
+          <!-- text block -->
+          <div class="page__about">
+            <div class="page__about-paragraph">
+              <div class="text-card">
+                <h2 class="text-card__title">Как это работает?</h2>
+                <p class="text-card__description">
+                  Наши коты любят, когда с&nbsp;ними разговаривают. Напишите
+                  письмо, и&nbsp;мы&nbsp;прочитаем его котам, когда они придут
+                  почесать пузо.
+                </p>
+              </div>
+            </div>
+            <div class="page__about-paragraph">
+              <div class="text-card">
+                <h2 class="text-card__title">Что передать котам?</h2>
+                <p class="text-card__description">
+                  Можно рассказать где вы&nbsp;видели вкусных мышей, какого
+                  размера синицы прилетели в&nbsp;город, или просто интересную
+                  историю из&nbsp;жизни.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- form -->
+          <div class="page__form">
+            <form class="form" action="/" method="post">
+              <!-- message -->
+              <label class="form__message message">
+                <div class="message__title">Сообщение</div>
+                <textarea
+                  class="message__field"
+                  placeholder="Что-нибудь хорошее"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </label>
+
+              <!-- options -->
+              <fieldset class="form__options">
+                <legend class="form__options-title">
+                  Дополнительные опции
+                </legend>
+                <label class="form__option checkbox">
+                  <input class="checkbox__input" type="checkbox" name="nose" />
+                  <div class="checkbox__box">
+                    <svg
+                      width="17"
+                      height="14"
+                      viewBox="0 0 17 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="checkbox__icon-path"
+                        d="m1 8.5 3.5 4L16 1.5"
+                        stroke="#0078BB"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  Сделать пуньк в нос
+                </label>
+                <label class="form__option checkbox">
+                  <input
+                    class="checkbox__input"
+                    type="checkbox"
+                    checked
+                    name="yummy"
+                  />
+                  <div class="checkbox__box">
+                    <svg
+                      width="17"
+                      height="14"
+                      viewBox="0 0 17 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="checkbox__icon-path"
+                        d="m1 8.5 3.5 4L16 1.5"
+                        stroke="#0078BB"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  Угостить вкусняшкой
+                </label>
+              </fieldset>
+
+              <!-- contacts -->
+              <fieldset class="form__contacts">
+                <legend class="form__contacts-title">Контакты для связи</legend>
+                <div class="input-group">
+                  <label class="input-group__label" for="name">
+                    Ваше имя
+                  </label>
+                  <input
+                    class="input-group__field"
+                    id="name"
+                    type="text"
+                    name="name"
+                  />
+                  <label class="input-group__label" for="email"> Email </label>
+                  <input
+                    class="input-group__field"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="youremail@catmail.org"
+                  />
+                  <div></div>
+                  <div class="input-group__description">
+                    Мы вышлем вам фото довольного кошачьего лица
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- submit -->
+              <button class="form__submit button button--large">
+                <svg
+                  class="button__icon"
+                  width="18"
+                  height="16"
+                  viewBox="0 0 18 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.0012 6.7517c-2.7908 0-6.7194 4.3143-6.7194 7.0394-.031 1.2271.9093 1.962 2.493 1.962 1.7159 0 2.8516-.8826 4.2264-.8826 1.3889 0 2.5281.8826 4.2265.8826 1.5506 0 2.5225-.7342 2.5225-1.9603-.0296-2.7232-3.9571-7.0411-6.749-7.0411Zm-5.1758-.443C3.4608 5.0914 2.331 4.3002 1.3071 4.5464.2832 4.7924-.2499 5.978.1148 7.1947.4794 8.4148 1.6092 9.206 2.6331 8.9598c1.0239-.246 1.5545-1.4345 1.1923-2.6511Zm2.9782-.7314c1.0855-.2857 1.6305-1.7264 1.213-3.283C7.5994.7375 6.3817-.2058 5.292.0484c-1.0854.2857-1.6304 1.7264-1.213 3.283.418 1.525 1.6346 2.5341 2.7246 2.2458Zm9.8945-1.0302c-1.0239-.2145-2.1536.545-2.5183 1.7623-.3646 1.2176.1671 2.404 1.191 2.6501 1.0239.2145 2.149-.545 2.5182-1.7623.3633-1.219-.1993-2.404-1.1909-2.6501Zm-5.4993 1.0302c1.0584.2857 2.3073-.7208 2.7247-2.2458.4174-1.525-.1275-2.9975-1.2131-3.283-1.0583-.2857-2.3073.7208-2.7247 2.2457-.4184 1.525.1266 2.9983 1.2131 3.2831Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Отправить
+              </button>
+            </form>
+          </div>
+        </main>
+
+        <!-- gallery -->
+        <div class="page__aside">
+          <article class="gallery">
+            <h3 class="gallery__title">Довольные коты</h3>
+            <img
+              class="gallery__picture"
+              src="/public/cat-1.png"
+              alt="белый пушистый котик на ручках"
+            />
+            <img
+              class="gallery__picture"
+              src="/public/cat-2.png"
+              alt="рыжик греется на солнышке"
+            />
+            <img
+              class="gallery__picture"
+              src="/public/cat-3.png"
+              alt="барсик в позе сфинкса"
+            />
+          </article>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

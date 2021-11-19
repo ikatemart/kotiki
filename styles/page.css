@@ -1,0 +1,65 @@
+.page {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 100px 78px;
+  box-sizing: border-box;
+}
+
+.page__header {
+  margin-top: 84px;
+}
+
+.page__body {
+  display: flex;
+  margin-top: 48px;
+}
+
+.page__main {
+  flex-grow: 1;
+}
+
+.page__about {
+}
+
+.page__about-paragraph {
+}
+.page__about-paragraph:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.page__form {
+  margin-top: 33px;
+}
+
+.page__aside {
+  margin-left: 40px;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 875px) {
+  .page__body {
+    flex-direction: column;
+  }
+  .page__aside {
+    margin-left: 0;
+    margin-top: 60px;
+    width: 100%;
+  }
+  .page__header {
+    margin-top: 34px;
+  }
+  .page__about-paragraph:not(:last-child) {
+    margin-bottom: 48px;
+  }
+  .page__form {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 650px) {
+  .page {
+    padding: 0 19px 109px;
+  }
+}

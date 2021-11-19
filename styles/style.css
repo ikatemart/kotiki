@@ -1,0 +1,18 @@
+:root {
+  --font-primary: "PT Sans", sans-serif;
+  --font-narrow: "PT Sans Narrow", sans-serif;
+
+  --text-h2: 400 42px var(--font-narrow);
+  --text-h3: 400 28px var(--font-narrow);
+
+  --color-action: #0078bb;
+  --color-action-hover: #62b9ea;
+  --color-action-active: #0a6ea6;
+  --color-dim: #808080;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  margin: 0;
+}
