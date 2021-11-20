@@ -11,8 +11,10 @@
   position: relative;
   transition: color 0.3s;
 }
-.header__logo:hover {
-  color: var(--color-action-hover);
+@media (hover: hover) {
+  .header__logo:hover {
+    color: var(--color-action-hover);
+  }
 }
 .header__logo:active {
   color: var(--color-action-active);
@@ -24,6 +26,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header__title {

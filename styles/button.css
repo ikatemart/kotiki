@@ -11,10 +11,12 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
-  transition: color 0.2s, background-color 0.2s;
+  transition: color 0.3s, background-color 0.3s;
 }
-.button:hover {
-  background-color: var(--color-action-hover);
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--color-action-hover);
+  }
 }
 .button:active {
   background-color: var(--color-action-active);
