@@ -8,22 +8,39 @@
 }
 
 .message__field {
+  position: relative;
+}
+
+.message__field-textarea {
   display: block;
   border: none;
   font: inherit;
-  border-radius: 4px;
   padding: 10px;
-  outline: 1px solid rgba(0, 0, 0, 0.15);
+  outline: none;
   width: 100%;
   box-sizing: border-box;
   resize: none;
 }
-.message__field:hover {
-  outline-color: rgba(0, 0, 0, 0.35);
-}
-.message__field:focus {
-  outline: 2px solid var(--color-action-hover);
-}
-.message__field::placeholder {
+.message__field-textarea::placeholder {
   color: var(--color-dim);
+}
+
+.message__field-outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: rgba(0, 0, 0, 0.15);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  pointer-events: none;
+  transition: color 0.3s;
+}
+.message__field:hover .message__field-outline {
+  color: rgba(0, 0, 0, 0.35);
+}
+.message__field-textarea:focus ~ .message__field-outline {
+  border-width: 2px;
+  color: var(--color-action-hover);
 }

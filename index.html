@@ -85,13 +85,16 @@
               <!-- message -->
               <label class="form__message message">
                 <div class="message__title">Сообщение</div>
-                <textarea
-                  class="message__field"
-                  placeholder="Что-нибудь хорошее"
-                  name="message"
-                  cols="30"
-                  rows="10"
-                ></textarea>
+                <div class="message__field">
+                  <textarea
+                    class="message__field-textarea"
+                    placeholder="Что-нибудь хорошее"
+                    name="message"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                  <div class="message__field-outline"></div>
+                </div>
               </label>
 
               <!-- options -->
@@ -155,20 +158,26 @@
                   <label class="input-group__label" for="name">
                     Ваше имя
                   </label>
-                  <input
-                    class="input-group__field"
-                    id="name"
-                    type="text"
-                    name="name"
-                  />
+                  <div class="input-group__field">
+                    <input
+                      class="input-group__field-input"
+                      id="name"
+                      type="text"
+                      name="name"
+                    />
+                    <div class="input-group__field-outline"></div>
+                  </div>
                   <label class="input-group__label" for="email"> Email </label>
-                  <input
-                    class="input-group__field"
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="youremail@catmail.org"
-                  />
+                  <div class="input-group__field">
+                    <input
+                      class="input-group__field-input"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="youremail@catmail.org"
+                    />
+                    <div class="input-group__field-outline"></div>
+                  </div>
                   <div></div>
                   <div class="input-group__description">
                     Мы вышлем вам фото довольного кошачьего лица

@@ -10,22 +10,40 @@
 }
 
 .input-group__field {
+  position: relative;
+}
+
+.input-group__field-input {
   border: none;
   font: inherit;
-  border-radius: 4px;
   padding: 7px 11px;
-  outline: 1px solid rgba(0, 0, 0, 0.15);
+  outline: none;
   height: 32px;
+  width: 100%;
   box-sizing: border-box;
 }
-.input-group__field:hover {
-  outline-color: rgba(0, 0, 0, 0.35);
-}
-.input-group__field:focus {
-  outline: 2px solid var(--color-action-hover);
-}
-.input-group__field::placeholder {
+.input-group__field-input::placeholder {
   color: var(--color-dim);
+}
+
+.input-group__field-outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: rgba(0, 0, 0, 0.15);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  pointer-events: none;
+  transition: color 0.3s;
+}
+.input-group__field:hover .input-group__field-outline {
+  color: rgba(0, 0, 0, 0.35);
+}
+.input-group__field-input:focus ~ .input-group__field-outline {
+  border-width: 2px;
+  color: var(--color-action-hover);
 }
 
 .input-group__description {
