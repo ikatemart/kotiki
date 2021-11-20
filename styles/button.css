@@ -1,7 +1,7 @@
 .button {
   padding: 0;
   border: none;
-  font-family: inherit;
+  font: inherit;
   background-color: var(--color-action);
   padding: 0 29px;
   line-height: 32px;
@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
+  -webkit-tap-highlight-color: transparent;
   transition: color 0.3s, background-color 0.3s;
 }
 @media (hover: hover) {

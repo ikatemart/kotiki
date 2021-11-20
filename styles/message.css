@@ -1,5 +1,6 @@
 .message {
   display: block;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .message__title {
@@ -31,16 +32,17 @@
   left: 0;
   right: 0;
   bottom: 0;
-  color: rgba(0, 0, 0, 0.15);
-  border: 1px solid currentColor;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   pointer-events: none;
-  transition: color 0.3s;
+  transition: border-color 0.3s;
 }
-.message__field:hover .message__field-outline {
-  color: rgba(0, 0, 0, 0.35);
+@media (hover: hover) {
+  .message__field:hover .message__field-outline {
+    border-color: rgba(0, 0, 0, 0.35);
+  }
 }
 .message__field-textarea:focus ~ .message__field-outline {
   border-width: 2px;
-  color: var(--color-action-hover);
+  border-color: var(--color-action-hover);
 }

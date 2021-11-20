@@ -5,7 +5,7 @@
   position: relative;
   white-space: nowrap;
   position: relative;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: #0079bb3d;
   transition: color 0.3s;
 }
 @media (hover: hover) {

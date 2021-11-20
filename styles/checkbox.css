@@ -29,17 +29,16 @@
   right: 0;
   bottom: 0;
   pointer-events: none;
-  color: rgba(0, 0, 0, 0.15);
-  border: 1px solid currentColor;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: color 0.3s;
+  transition: border-color 0.3s;
 }
 .checkbox:hover .checkbox__box::after {
-  color: rgba(0, 0, 0, 0.35);
+  border-color: rgba(0, 0, 0, 0.35);
 }
 /* .checkbox__input:active ~ .checkbox__box::after {
   border-width: 2px;
-  color: var(--color-action-hover);
+  border-color: var(--color-action-hover);
 } */
 
 .checkbox__icon-path {
