@@ -1,0 +1,14 @@
+{
+  "name": "kotiki",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:katermart/kotiki.git",
+  "author": "katermart <t145kr@yandex.ru>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
